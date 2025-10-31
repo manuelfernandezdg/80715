@@ -269,3 +269,50 @@ a.btn-outline:active {
 }
 
 /* Clase 6 / Formularios */
+
+form {
+    width: 24rem;
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    border-radius: 1rem;
+    padding: 2rem;
+
+    margin: 0 auto 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+form span {
+    text-align: right;
+    color: hsl(286, 100%, 35%);
+    font-weight: 600;
+}
+
+input {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid hsl(208, 100%, 8%);
+}
+
+input:focus {
+    /* outline: 0.2rem solid black;
+    outline-offset: 0.5rem; */
+    outline: none;
+    border: 0.1rem solid hsl(286, 100%, 35%);
+}
+
+form button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    background-color: hsl(208, 100%, 8%);
+    color: hsl(208, 100%, 94%);
+}
+
+button:hover {
+    background-color: hsl(286, 100%, 65%);
+    color: hsl(208, 100%, 8%);
+    cursor: pointer;
+}
