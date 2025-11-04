@@ -32,35 +32,94 @@
         <section id="bienvenida">
             <h1>Bienvenidos a la clase 7</h1>
         </section>
-        
+        <section>
+            <h1>Formularios</h1>
+            <form action="">
+                <h2>Log In</h2>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="email@dominio.com" title="Recuerda que es el mismo email con el que te registraste" required>
+                <span>Mensaje de estado</span>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="Ingresa tu contraseña" title="Es la contraseña con la que te diste de alta">
+                <span>Mensaje de estado</span>
+
+                <button>Ingresar</button>
+
+                <ul class="form-asist">
+                    <li><a href="">¿Olvidaste tu email?</a></li>
+                    <li><a href="">¿Olvidaste tu contraseña?</a></li>
+                </ul>
+            </form>
+
+            <form action="">
+                <h2>Mensaje</h2>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="¿Cómo te llamás?" required>
+                <span>Mensaje de estado</span>
+
+                <label for="select">Select</label>
+                <select name="select" id="select">
+                    <option value="pedido">Mi pedido</option>
+                    <option value="subscripcion">Mi subscripción</option>
+                    <option value="novedades">Mis novedades</option>
+                    <option value="otro">Otra consulta</option>
+                </select>
+                <span>Mensaje de estado</span>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje"></textarea required>
+                <span>Mensaje de estado</span>
+                
+                <div>
+                    ¿Qué te gusta leer? <br>
+                    <input type="checkbox" id="opcion1" value="comics">
+                    <label for="opcion1">Comics</label>
+                    <input type="checkbox" id="opcion2" value="manga">
+                    <label for="opcion2">Manga</label>
+                    <input type="checkbox" id="opcion3" value="opcion3">
+                    <label for="libros">Libros</label>
+                </div>
+
+                <label>Acepto los <a href="" target="_blank">términos y condiciones</a>
+                    <input type="checkbox" value="acepto" required>
+                </label>
+
+                <button>Enviar mensaje</button>
+            </form>
+        </section>
     </main>
     <footer>
-        <nav>
-            <h1>Sobre nuestro curso:</h1>
-            <ul>
-                <li><a class="logo" href="https://www.educacionit.com/curso-de-html" target="_blank">Programa</a></li>
-                <li><a class="logo" href="https://alumni.education/" target="_blank">Alumni</a></li>
-            </ul>
-        </nav>
+        <div class="contenedor-footer">
+            <nav>
+                <h1>Sobre nuestro curso:</h1>
+                <ul>
+                    <li><a class="logo" href="https://www.educacionit.com/curso-de-html" target="_blank">Programa</a></li>
+                    <li><a class="logo" href="https://alumni.education/" target="_blank">Alumni</a></li>
+                </ul>
+            </nav>
 
-        <nav>
-            <ul>
-                <li><a href="#" target="_blank" title="Sumate a nuestro servidor de Discord">
-                        <img src="img/discord-brands-solid-full.svg" alt="Sumate a nuestro servidor de Discord">
-                    </a></li>
-                <li>
-                    <a href="https://wa.me/5491152638148" target="_blank" title="Estamos en Whatsapp">
-                        <img src="img/whatsapp-brands-solid-full.svg" alt="">
-                    </a>
-                </li>
-                <li><a href="https://github.com/manuelfernandezdg/80715" target="_blank" title="Link a nuestro repositorio de Github">
-                        <img src="img/github-brands-solid-full.svg" alt="Link a nuestro repositorio de Github">
-                    </a></li>
-                <li><a href="https://www.figma.com/design/sYLVnSFgfRYmV9aB5sFfID/80715---DW?node-id=0-1&t=jGax7HCCcTeiiiyi-1" target="_blank" title="Link a nuestro proyecto en Figma">
-                        <img src="img/figma-brands-solid-full.svg" alt="Link a nuestro proyecto en Figma">
-                    </a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#" target="_blank" title="Sumate a nuestro servidor de Discord">
+                            <img src="img/discord-brands-solid-full.svg" alt="Sumate a nuestro servidor de Discord">
+                        </a></li>
+                    <li>
+                        <a href="https://wa.me/5491152638148" target="_blank" title="Estamos en Whatsapp">
+                            <img src="img/whatsapp-brands-solid-full.svg" alt="">
+                        </a>
+                    </li>
+                    <li><a href="https://github.com/manuelfernandezdg/80715" target="_blank" title="Link a nuestro repositorio de Github">
+                            <img src="img/github-brands-solid-full.svg" alt="Link a nuestro repositorio de Github">
+                        </a></li>
+                    <li><a href="https://www.figma.com/design/sYLVnSFgfRYmV9aB5sFfID/80715---DW?node-id=0-1&t=jGax7HCCcTeiiiyi-1" target="_blank" title="Link a nuestro proyecto en Figma">
+                            <img src="img/figma-brands-solid-full.svg" alt="Link a nuestro proyecto en Figma">
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>

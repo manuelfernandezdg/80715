@@ -34,6 +34,8 @@ body {
 
 /* Estilos del Header */
 header {
+    position: sticky;
+    top: 0;
     background-color: hsl(208, 100%, 8%);
     color: hsl(208, 100%, 94%);
     padding: 1rem; /* 1rem = 16px */
@@ -60,28 +62,41 @@ main {
 }
 
 section {
-    width: 65rem; /* Revisar */
+    width: min(62rem, 100%);
     margin: 0 auto 2rem;
 }
 
 section h1 {
     text-align: center; /* Alineación del texto */
-    font-size: 3rem; /* Tamaño de la fuente */
+    /*font-size: 3rem;  Tamaño de la fuente */
+    font-size: clamp(1.5rem, 5vw, 3rem); /* 1.5rem para móvil, 3rem para escritorio */
     font-weight: 300; /* Grosor de línea */
     font-style: normal; /* Inclinación (normal o italic) */
 }
 
+/* h2 {
+        clamp(1rem, 4vw, 2rem)
+    } 
+*/
 
 /* Estilos para el Footer */
 footer {
+    position: sticky;
+    bottom: 0;
     background-color: hsl(208, 100%, 8%);
     color: hsl(208, 100%, 94%);
     padding: 2rem;
+}
+
+.contenedor-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+
+    width: min(62rem, 100%);
+    margin: 0 auto;
 }
 
 footer h1 {
@@ -271,7 +286,7 @@ a.btn-outline:active {
 /* Clase 6 y 7 / Formularios */
 
 form {
-    width: 24rem;
+    width: min(24rem, 100%);
     border: 0.1rem solid hsl(208, 100%, 8%);
     border-radius: 1rem;
     padding: 2rem;
@@ -289,13 +304,25 @@ form span {
     font-weight: 600;
 }
 
-input {
+input,
+select,
+textarea {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     border: 0.1rem solid hsl(208, 100%, 8%);
 }
 
-input:focus {
+select {
+    background-color: white;
+}
+
+textarea {
+    height: 12rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
     /* outline: 0.2rem solid black;
     outline-offset: 0.5rem; */
     outline: none;
