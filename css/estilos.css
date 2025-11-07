@@ -150,7 +150,7 @@ img {
 #bienvenida h1 {
     background-color: hsla(208, 100%, 8%, 0.75);
     color: hsl(208, 100%, 94%);
-    padding: 2rem 0;
+    padding: 2rem 1rem;
 }
 
 
@@ -345,3 +345,124 @@ button:hover {
 }
 
 /* Clase 8 */
+/*
+    a:link
+    a:visited
+    a:hover
+    a:active
+*/
+
+/* Botón de home */
+a.btn-icon:link,
+a.btn-icon:visited {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-size: cover;
+    background-position: top;
+    padding-bottom: 1rem;
+}
+
+a.btn-icon:hover,
+a.btn-icon:active {
+    border-bottom: 0.1rem solid hsla(208, 100%, 8%, 0); /* Sólo para que el hover no quede vacío */
+}
+
+a.btn-icon-home:link,
+a.btn-icon-home:visited {
+    background-image: url('../img/home-outline.svg');
+}
+
+a.btn-icon-home:hover,
+a.btn-icon-home:active {
+    background-image: url('../img/home-fill.svg');
+}
+
+/* Botón de notificaciones */
+a.btn-icon-notif:link,
+a.btn-icon-notif:visited {
+    background-image: url('../img/notifications-outline.svg');
+}
+
+a.btn-icon-notif:hover,
+a.btn-icon-notif:active {
+    background-image: url('../img/notifications-fill.svg');
+}
+
+/* Botón de favorito */
+a.btn-icon-fav:link,
+a.btn-icon-fav:visited {
+    background-image: url('../img/favorite-outline.svg');
+}
+
+a.btn-icon-fav:hover,
+a.btn-icon-fav:active {
+    background-image: url('../img/favorite-fill.svg');
+}
+
+
+.accesibilidad {
+    list-style: none;
+    width: 24rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(208, 100%, 74%);
+    border: 0.1rem solid hsl(208, 100%, 8%);
+    border-radius: 2rem;
+}
+
+.accesibilidad li {
+    display: flex;
+}
+
+/* sr-only / Screen reader only */
+.sr-only {
+    display: block;
+    width: 1px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+}
+
+/* Buscador */
+.buscador {
+    flex-direction: row;
+    align-items: center;
+
+    padding: 2rem;
+}
+
+.buscador button {
+    width: 2rem;
+    aspect-ratio: 1;
+    background-image: url('../img/search-outline-dark.svg');
+    background-size: cover;
+    margin-top: 0;
+}
+
+.buscador button:hover {
+    background-image: url('../img/search-outline-light.svg');
+}
+
+
+/* Tablas */
+table {
+    width: 100%;
+    border: solid 0.1rem hsl(208, 100%, 8%);
+    text-align: center;
+}
+
+th,
+td {
+    border: solid 0.1rem hsl(208, 100%, 8%);
+    padding: 1rem;
+}
+
+tr:hover {
+    background-color: hsl(208, 100%, 74%);
+}
