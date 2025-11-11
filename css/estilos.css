@@ -1,6 +1,7 @@
 /*Estilos*/
 /* Tipografía */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 /* Lista de colores */
@@ -257,7 +258,7 @@ a.btn-fill:visited {
     text-align: center;
     color: hsl(208, 100%, 94%);
     font-size: 0.9rem;
-    padding: 0.5rem 0;
+    padding: 0.5rem 2rem;
     border-radius: 0.8rem;
 }
 
@@ -273,7 +274,7 @@ a.btn-outline:visited {
     border: 0.1rem solid hsl(208, 100%, 8%);
     text-align: center;
     font-size: 0.9rem;
-    padding: 0.5rem 0;
+    padding: 0.5rem 2rem;
     border-radius: 0.8rem;
 }
 
@@ -455,6 +456,7 @@ table {
     width: 100%;
     border: solid 0.1rem hsl(208, 100%, 8%);
     text-align: center;
+    border-collapse: collapse;
 }
 
 th,
@@ -465,4 +467,110 @@ td {
 
 tr:hover {
     background-color: hsl(208, 100%, 74%);
+}
+
+table img {
+    width: 8rem;
+}
+
+/* Clase 9 */
+/* Ejercicio final */
+#producto *,
+#contacto {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+#producto,
+#contacto {
+    background-color: hsl(231, 13%, 11%);
+    color: hsl(55, 55%, 91%);
+}
+
+.contenedor-producto {
+    display: flex;
+    padding: 3rem 2rem;
+    gap: 2rem;
+}
+
+.prod-izquierda {
+    width: 20rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.prod-izquierda img {
+    width: 14rem;
+}
+
+.prod-derecha {
+    width: 40rem;
+}
+
+.prod-derecha ul {
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 0; /* Importante! */
+}
+
+a.prod-categorias:link,
+a.prod-categorias:visited {
+    background-color: hsl(231, 100%, 85%);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: hsl(231, 13%, 11%);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+a.prod-categorias:hover,
+a.prod-categorias:active {
+    color: hsl(55, 55%, 91%);
+    background-color: hsl(286, 100%, 35%);
+}
+
+#producto .btn-fill {
+    color: hsl(231, 13%, 11%);
+    background-color: hsl(231, 100%, 85%);
+    font-weight: 600;
+    padding: 0.8rem 1rem;
+}
+
+.prod-derecha h1 {
+    text-align: left;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.prod-derecha p {
+    line-height: 1.6;
+}
+
+.prod-derecha h2 {
+    color: hsl(231, 100%, 85%);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Contacto */
+
+.contenedor-contacto {
+    display: flex;
+    gap: 2rem;
+}
+
+#contacto video {
+    width: 35rem;
+}
+
+#contacto h1 {
+    text-align: left;
+}
+
+#contacto iframe {
+    width: 100%;
+    height: 35rem;
+    border: none;
 }
